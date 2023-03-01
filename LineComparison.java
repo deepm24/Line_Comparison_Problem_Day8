@@ -1,5 +1,4 @@
 package org.example;
-
 import java.util.Scanner;
 
 public class LineComparison
@@ -24,23 +23,43 @@ public class LineComparison
 
 
    }
-   public void ForTwoline()
+   void ForTwoline()
     {
+        double lengthOfLineOne=0;
+        double lengthOfLineTwo=0;
+
+
      for (int i=1;i<=2;i++)
      {
          if(i==1)
          {
              System.out.println("enter value for first line");
-             System.out.println(line()+"<length of first line" );
-
+             double  length=line();
+             System.out.println( length+" length of first line" );
+             lengthOfLineOne = length;
          }
          else
          {
              System.out.println("enter value for second line");
-             System.out.println(line()+"<length of second line" );
+              double length=line();
+             System.out.println( length+" length of second line" );
+             lengthOfLineTwo=length;
 
          }
+
      }
 
+     if( lengthOfLineOne==lengthOfLineTwo )
+     {
+         System.out.println("first line & Second line  are Equal");
+     }
+     else if ( lengthOfLineOne > lengthOfLineTwo)
+     {
+         System.out.println("First Line is Bigger Then  Second Line ");
+     }
+        else
+        {
+            System.out.println("Second Line is Bigger Then  First Line");
+        }
     }
 }
