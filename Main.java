@@ -5,6 +5,6 @@ public class Main {
     {
         System.out.println(" Welcome To Line Comparison Computation Program");
         LineComparison obj= new LineComparison();
-        obj.line();
+        obj.ForTwoline();
     }
 }
